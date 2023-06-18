@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Diner Website</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://kit.fontawesome.com/bb55158e46.js" crossorigin="anonymous"></script>
+		<script src="js/script.js" defer></script>
+	</head>
+	<body>
+		<div class="grid-container | grid">
+			<header>
+				<div class="container">
+					<button class="mobile-menu-open" role="navigation menu">
+						<i class="fa-solid fa-bars"></i>
+					</button>
+					<div class="mobile-nav-menu | active">
+						<button class="mobile-menu-close">
+							<i class="fa-solid fa-x"></i>
+						</button>
+						<ul>
+							<li><a class="font-500 ff-arial text-white" href="index.html">Home</a></li>
+							<li><a class="font-500 ff-arial text-white" href="history.html">History</a></li>
+							<li><a class="font-500 ff-arial text-white" href="menu.html">Menu</a></li>
+							<li><a class="font-500 ff-arial text-white" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<nav>
+						<div class="primary-navigation | grid">
+							<ul class="nav-menu | grid uppercase link-color">
+								<div class="list-container | flex">
+									<li><a class="menu-border text-decoration" href="index.html">Home</a></li>
+									<li><a href="history.html">History</a></li>
+									<li><a href="menu.html">Menu</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</div>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+
+			<main>
+				<section class="hero | spacing">
+					<div class="container | grid">
+						<div class="hero-left | bg-color flex uppercase flow">
+							<h1 class="text-white ff-sans font-900 text-center">halfmoon Diner</h1>
+							<button class="btn-primary | uppercase font-400"><a href="menu.html">view menus</a></button>
+						</div>
+						<div class="hero-right">
+							<picture>
+								<source class="img" media="(max-width: 1020px)" srcset="images/Optimized-sandwich-lg.jpg" width="1010" height="760" />
+								<img src="images/Optimized-sandwich.jpg" alt="" width="780" height="750" />
+							</picture>
+						</div>
+					</div>
+				</section>
+
+				<aside class="aside">
+					<div class="container | grid">
+						<div class="aside-left">
+							<picture>
+								<source class="img" media="(max-width:1020px)" srcset="images/desserts.jpg" />
+								<img src="images/Optimized-desserts.jpg" alt="" />
+							</picture>
+						</div>
+						<div class="aside-right | flex flow">
+							<h2 class="font-1100 ff-sans">Hungry?</h2>
+							<p>There's much to see here. So, take your time, look around, and learn all there is to know about us. We hope you enjoy our site and take a moment to drop us a line.</p>
+							<button class="btn-secondary | uppercase text-white">order online</button>
+						</div>
+					</div>
+				</aside>
+			</main>
+
+			<footer class="footer">
+				<div class="container | flow">
+					<hr />
+					<p class="text-center">Copyright © 2022 Halfmoon Diner - All Rights Reserved.</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
