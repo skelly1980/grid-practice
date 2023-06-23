@@ -223,8 +223,7 @@ select {
 }
 
 .cards {
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -414,7 +413,12 @@ footer {
 
     .mobile-nav-menu ul li {
         border-bottom: 2px solid #ffffff;
-        padding-block: 1rem;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .mobile-nav-menu ul li:hover {
+        background-color: rgba(255, 255, 255, 0.2);
     }
 
     .mobile-nav-menu ul li a {
@@ -469,15 +473,27 @@ footer {
 }
 
 .contact-images .container {
-    grid-template-columns: repeat(autofit, minmax(min(200px, 100%), 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 270px 300px 300px;
+    /*
     grid-template-areas: 
     "eggs burger pie"
     "breakfast blt mac"
     "breakfast salad steak"
     "chicken chicken pasta"
-    "split fries cheesecake";
+    "split fries cheesecake";*/
 }
 
+.breakfast {
+    grid-row: 2 / 4;
+}
+
+.pasta {
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+}
+
+/*
 .eggs {
     grid-area: eggs;
 }
@@ -560,6 +576,20 @@ footer {
 }
 
 @media (max-width: 850px) {
+    .contact-images .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+*/
+@media (max-width: 1020px) {
+    .contact-images .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
     .contact-images .container {
         display: flex;
         flex-direction: column;
